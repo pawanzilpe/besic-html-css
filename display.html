@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin: 50px;
+            padding: 20px;
+        }
+        span{
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(38, 97, 11);
+            margin: 50px;
+            padding: 20px;
+            bottom:auto;
+        }
+        /*pseudo classes*/
+          /* apply to fast pryrent uses to chaid proparty  */ 
+        h1:first-child{
+            background-color: aqua;
+        }
+           /* apply to last pryrent uses to chaid proparty  */ 
+        h3:last-child{
+            background-color: rgb(136, 39, 55);
+        }
+         /*jo last p tag ahe usko apply hoga*/
+        p:last-of-type{
+            background-color: blue;
+        }
+        /*jo fast h1 tag ahe usko apply hoga*/
+        h1:first-of-type{
+            background-color: darkviolet;
+        }
+       /*oard number ke liye use hota ahe 2 li ko*/
+        li:nth-child(2n){
+            background-color: lightslategrey;
+        }
+        /*inar number ke liye use hota ahe 1 li ko*/
+        li:nth-child(2n+1){
+            background-color: rgb(2, 51, 51);
+        }
+        .box1{
+            background-color: hotpink;
+        }
+        .box1:hover{
+            background-color: aquamarine;
+
+        }
+        .box2{
+            background-color: hotpink;
+        }
+        .box2:hover{
+            background-color: aquamarine;
+            color: #000;
+
+        }
+        p::first-line{
+            background-color: beige;
+
+        }
+        h1::selection{
+            background-color: aqua;
+
+        }
+        li::marker{
+            background-color: purple;
+            color:rgb(7, 7, 22);
+            font-size: 80px;
+        }
+
+        .head1::before{
+            content: "i am a";
+        }
+        .head1::after{
+            content: "  form wardha";
+        }
+
+        .outer-box{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+
+        }
+        .inner-box{
+            height: 50px;
+            width: 50px;
+            background-color: blueviolet;
+            display: none;
+        }
+        .outer-box:hover .inner-box{
+            display: block;
+        }
+          .outer-box:hover + .inner-box{
+            display: block;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</h1>
+    <span>Iste dolorum quod ratione illum consectetur!</span>
+    <p> Vel hic quisquam reprehenderit eum quam reiciendis dolores facilis commodi porro delectus iusto impedit, voluptatibus odit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias at nihil quae harum praesentium velit, voluptatem iure, nulla a autem amet asperiores. Dolor voluptas odit nisi quaerat necessitatibus nemo soluta.</p>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe mollitia amet nesciunt nam laudantium dicta minima fugit fugiat nobis cumque consequuntur assumenda placeat officia ad natus nihil, enim nostrum!</h2>
+
+    <div class="contenar">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aliquid nesciunt maiores laboriosam magnam sunt cumque cum, odit quibusdam quas aliquam hic odio minus maxime earum temporibus doloribus id eveniet?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum neque, unde aperiam quisquam eaque assumenda voluptas iusto harum sapiente est? Voluptatem tempore architecto qui eligendi autem delectus! Est, eligendi quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quis? Consectetur dolorum quae ipsum maiores dignissimos assumenda unde cupiditate. Eum assumenda magnam molestiae dolor ea voluptatem magni enim dignissimos beatae.</p>
+
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eum maxime dolorum ratione. Nobis ratione, perspiciatis officiis dignissimos sequi molestiae, porro omnis doloribus dolores eius quaerat tempore natus! Consequatur, deleniti.</h2>
+
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi in, magnam at nesciunt libero maxime non sequi ullam ipsam aliquam perferendis similique esse sint laudantium aspernatur saepe, rerum enim ut!</h3>
+    </div>
+
+    <ul>
+        <li>1Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti.</li>
+        <li>2Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti.</li>
+    </ul>
+
+    <div class="box1">html</div>
+    <br>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus omnis obcaecati nam animi dignissimos nulla, exercitationem autem! Dolore, nam cum, qui quis vitae sunt et dignissimos illum odit ex omnis.</div>
+
+    <h1 class="head1"> web devlaper</h1>
+    <div class="outer-box">
+        <div class="inner-box">hello</div>
+    </div>
+<br>
+    <div class="outer-box"></div>
+     <div class="inner-box">hhjfjhfhf</div>
+
+
+</body>
+</html>

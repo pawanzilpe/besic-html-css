@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1:hover{
+            transform: rotate(360deg);
+
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            margin: 150px;
+            transition-duration: 2s;
+
+        }
+        .box2:hover{
+            transform: scale(0.5);
+              transform: scaleY(1.5);
+                transform: scaleX(0.5);
+                  transform: scale(2,0.5);
+        }
+        .box3{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+             transition-duration: 2s;
+
+
+            
+        }
+        .box3:hover{
+            transform: translate(200px);
+             transform: translateY(300px);
+              transform: translateX(400px);
+               transform: translate(200px, 400PX);
+        }
+        .box4{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin: 100px;
+             transition-duration: 2s;
+        }
+        .box4:hover{
+             transform: skew(-45deg);
+              transform: skewY(30deg);
+               transform: skew(30deg, 45deg);
+        }
+        .square{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin: 100px;
+
+            animation-name: spin;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+            animation-duration: normal;
+              animation-duration: reverse;
+                animation-duration: alternate;
+                  animation-duration: alternate-reverse;
+
+                  animation-timing-function: ease;
+                   animation-timing-function: ease-in;
+                    animation-timing-function: ease-in-out;
+                     animation-timing-function: ease-out;
+        }
+        .ractalgle{
+            height: 300px;
+            width: 400px;
+            background-color: red;
+            margin: 100px;
+            animation: colorchange 5s infinite  ease-out 5s ;
+        }
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes colorchange{
+            20%{
+             background-color: black;
+             border-radius: 150px;
+            }
+             40%{
+               background-color: rgb(207, 31, 31);
+             border-radius: 50px; 
+            }
+             45%{
+                background-color: rgb(57, 190, 24);
+             border-radius: 0px;
+            }
+             55%{
+                background-color: rgb(75, 22, 197);
+             border-radius: 200px;
+            }
+             80%{
+                background-color: rgb(224, 42, 185);
+             border-radius: 0px;
+            }
+             90%{
+                background-color: rgb(48, 24, 24);
+             border-radius: 150px;
+            }
+             100%{
+                background-color: black;
+             border-radius: 900px;
+            }
+        }
+        
+        .box1{
+            height: 200px;
+            width: 200px;
+            border: 7px solid; 
+            border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            background-color: red;
+            transition-duration: 2s;
+            box-shadow: 2PX;
+            
+            animation: colorchange 5s infinite  ease-in-out 5s ;
+
+
+        }
+        .box1:hover{
+         
+            border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            transform: translateX(300px);
+            margin-left: 35px;
+            
+           
+        }
+       
+            
+
+          @keyframes colorchange{
+            20%{
+             background-color: black;
+             border-radius: 150px;
+             transform: translateX(300px);
+            margin-left: 35px;
+             border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            }
+             40%{
+               background-color: rgb(207, 31, 31);
+             border-radius: 50px; 
+             transform: translateX(0px);
+            margin-left: 70px;
+             border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            }
+             45%{
+            background-color: rgb(57, 190, 24);
+             border-radius: 0px;
+             transform: translateX(300px);
+            margin-left: 105px;
+              border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            
+            }
+             55%{
+                background-color: rgb(75, 22, 197);
+             border-radius: 200px;
+             transform: translateX(0px);
+            margin-left: 140px;
+              border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            }
+             80%{
+                background-color: rgb(224, 42, 185);
+             border-radius: 0px;
+             transform: translateX(300px);
+            margin-left: 175px;
+              border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            }
+             90%{
+                background-color: rgb(48, 24, 24);
+             border-radius: 150px;
+             transform: translateX(0px);
+            margin-left: 210px;
+              border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+
+            }
+             100%{
+                background-color: rgb(112, 26, 50);
+             border-radius: 900px;
+             margin-left: 280px;
+             transform: translateX(300px);
+               border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+
+    <div class="square"></div>
+     <div class="ractalgle"></div>
+    
+</body>
+</html>s

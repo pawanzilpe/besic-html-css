@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenar{
+             height: 500px;
+             width: 700px;
+             background-color: gray;
+             border: 2px;
+
+             display: flex;
+
+             flex-direction: row;
+             flex-direction: column;
+             flex-direction: row-reverse;
+             flex-direction: column-reverse;
+        }
+        .box{
+            height: 120px;
+            width: 120px;
+            background-color: yellow;
+            border: 2px solid red;
+             flex-basis: 200px;
+        }
+         .contenar2{
+             height: 500px;
+             width: 700px;
+             background-color: gray;
+             border: 2px;
+
+             display: flex;
+             /* 
+             flex-direction: row;
+             flex-direction: column;
+             flex-direction: row-reverse;
+             flex-direction: column-reverse; 
+             */
+
+             flex-wrap: wrap;
+              flex-wrap: wrap-reverse;
+               flex-wrap: nowrap;
+
+
+                flex-flow: column wrap;
+        }
+
+        .contenar3{
+             height: 500px;
+             width: 700px;
+             background-color: gray;
+             border: 2px;
+
+             display: flex;
+/* 
+            
+
+
+                flex-flow: column wrap; */
+
+                flex-direction: row;
+
+             
+                   justify-content: center;  
+                    justify-content: end;
+                       justify-content: start;
+                          justify-content: space-between;
+                             justify-content: space-around;
+                                justify-content: space-evenly;
+        }
+
+         .contenar4{
+             height: 500px;
+              width: 700px;
+             background-color: gray;
+             border: 2px;
+
+             display: flex;
+/* 
+             flex-direction: row;
+             flex-direction: column;
+             flex-direction: row-reverse;
+             flex-direction: column-reverse; */
+/* 
+             flex-wrap: wrap;
+              flex-wrap: wrap-reverse;
+               flex-wrap: nowrap;
+
+
+                flex-flow: column wrap; */
+
+                flex-direction: row;
+
+             
+                   justify-content: center;  
+                    justify-content: end;
+                       justify-content: start;
+                          justify-content: space-between;
+                             justify-content: space-around;
+                                justify-content: space-evenly;
+            
+                                
+             align-items: center;    
+             align-items: end;                  
+             align-items: start;   
+             align-items: baseline;   
+             align-items: stretch;   
+        }
+
+        .contenar5{
+             height: 500px;
+              width: 700px;
+             background-color: gray;
+             border: 2px;
+
+             display: flex;
+
+
+
+                flex-flow: column wrap; 
+
+                flex-direction: column;
+
+             
+                   justify-content: center;  
+                justify-content: end;
+                       justify-content: start;
+                          justify-content: space-between;
+                             justify-content: space-around;
+                                justify-content: space-evenly;
+            
+                                
+             align-items: center;    
+             align-items: end;                  
+             align-items: start;   
+             align-items: baseline;   
+             align-items: stretch; 
+             
+             
+             align-content: center;
+             align-content: end;
+             align-content: start;
+             align-content: space-between;
+            align-content: space-around;
+            align-content: space-evenly;
+        }
+        .box1{
+            background-color: aqua;
+            /* align-self: center;
+            align-self: start;
+            align-self: end; */
+          /* flex-basis: 200px; */
+
+          /* flex-grow: 3; */
+
+          flex-shrink: 2;
+          order: 1;
+
+
+
+
+        }
+        .box2{
+       background-color: blue;
+         /* flex-grow: 2; */
+          flex-shrink: 3;
+          order:-2;
+        }
+        .contenar6{
+             height: 500px;
+              width: 700px;
+             background-color: gray;
+             border: 2px;
+
+             display: flex;
+
+
+
+                flex-flow: row wrap; 
+
+                flex-direction: row;
+
+             
+                   justify-content: center;  
+                justify-content: end;
+                       justify-content: start;
+                          justify-content: space-between;
+                             justify-content: space-around;
+                                justify-content: space-evenly;
+            
+                                
+             align-items: center;    
+             align-items: end;                  
+             align-items: start;   
+             align-items: baseline;   
+             align-items: stretch; 
+             
+             
+             align-content: center;
+             align-content: end;
+             align-content: start;
+             align-content: space-between;
+            align-content: space-around;
+            align-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenar">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+    <br><br><br><h1>2</h1>
+    <div class="contenar2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+
+      <br><br><br><h1>3</h1>
+    <div class="contenar3">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        
+    </div>
+
+        <br><br><br><h1>4</h1>
+    <div class="contenar4">
+        <div class="box"><h1>1</h1></div>
+        <div class="box"><h2>2</h2></div>
+        <div class="box"><h3>3</h3></div>
+        
+    </div>
+    <br><br><br><h1>5</h1>
+    <div class="contenar5">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+
+    <br><br><br><h1>6</h1>
+    <div class="contenar6">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+</body>
+</html>
