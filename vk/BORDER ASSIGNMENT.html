@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: white;
+  margin: 0;
+}
+
+.flower {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.circle {
+  --angle: calc(var(--i) * 45deg); /* 360/8 = 45 */
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: hsl(calc(var(--i) * 45), 70%, 70%);
+  border-radius: 50%;
+  opacity: 0.6;
+  transform: rotate(var(--angle)) translate(80px) rotate(calc(-1 * var(--angle)));
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+        </style>
+</head>
+<body>
+    <div class="flower">
+    
+    <div class="circle" style="--i: 0;"></div>
+    <div class="circle" style="--i: 1;"></div>
+    <div class="circle" style="--i: 2;"></div>
+    <div class="circle" style="--i: 3;"></div>
+    <div class="circle" style="--i: 4;"></div>
+    <div class="circle" style="--i: 5;"></div>
+    <div class="circle" style="--i: 6;"></div>
+    <div class="circle" style="--i: 7;"></div>
+  </div>
+</body>
+</html>

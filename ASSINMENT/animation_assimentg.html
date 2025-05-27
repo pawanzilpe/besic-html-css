@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer_box{
+            height: 800px;
+            width: 700px;
+            border:solid black 10px;
+        }
+        .box1{
+            background-color: red;
+           
+            height: 200px;
+            width: 200px;
+            border: solid 10px;
+            border-top-color: yellow;
+            border-bottom-color: blue;
+            border-right-color:rgb(247, 6, 46) ;
+            border-left-color: green;
+            animation-name: spin;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        }
+          @keyframes spin{
+            20%{
+                transform: translate(100px,600px);
+                 border-radius: 50%;
+            }
+            40%{
+                transform: translate(200px,0);
+                 border-radius: 0;
+            }
+            60%{
+                transform: translate(300px,600px);
+                 border-radius: 50%;
+            } 
+            80%{
+                transform: translate(400px,0);
+                 border-radius: 0;
+            }
+ 
+            100%{
+                transform: translate(500px,600px);
+                 border-radius: 50%;
+            }
+                
+            
+            
+        }
+        
+        .box2{
+            height: 50px;
+            width: 500px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        .box3{
+           height: 50px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 10px; 
+            background-color: red;
+            animation-name: slide;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        }
+        @keyframes slide {
+            20%{
+                width: 150px;
+                background-color: purple;
+            }
+            30%{
+                width: 200px;
+                background-color: rgb(11, 0, 128);
+            }
+            60%{
+                width: 250px;
+                background-color: rgb(37, 241, 51);
+            }
+            70%{
+                width: 300px;
+                background-color: purple;
+            }
+            80%{
+                width: 400px;
+                background-color: rgb(36, 206, 236);
+            }
+            100%{
+                width: 500px;
+                background-color: rgba(252, 9, 9, 0.941);
+}
+
+            
+        }
+        .cir1{
+            height: 350px ;
+            width: 350px;
+            border: 6px solid;
+            margin: 200px;
+            padding:20px;
+            border-radius: 50%;
+            border-top-color:red ;
+            border-left-color:rgb(61, 22, 220) ;
+            border-right-color:rgb(215, 17, 182) ;
+            border-bottom-color:rgb(212, 255, 0) ;
+            animation:spin2 2s ease-in  infinite alternate ;
+        }
+        .cir2{
+            height: 300px ;
+            width: 300px;
+            border: 6px solid;
+            border-radius: 50%;
+            padding: 20px; 
+            border-top-color:rgb(255, 0, 144) ;
+            border-left-color:rgb(125, 106, 203) ;
+            border-right-color:rgb(40, 17, 215) ;
+            border-bottom-color:rgb(212, 255, 0) ;
+            animation:spin2 6s ease-in  infinite alternate ;
+        }
+         .cir3{
+            height: 250px ;
+            width: 250px;
+            border: 6px solid;
+            border-radius: 50%;
+            padding: 20px; 
+            border-top-color:rgb(199, 159, 30) ;
+            border-left-color:rgb(61, 22, 220) ;
+            border-right-color:rgb(215, 17, 17) ;
+            border-bottom-color:rgb(0, 4, 255) ;
+            animation:spin2 5s ease-in  infinite alternate ;
+        }
+        .cir4{
+            height: 200px ;
+            width: 200px;
+            text-align: center;
+            border: 6px solid;
+             padding: 20px; 
+            border-radius: 50%;
+            border-top-color:red ;
+            border-left-color:rgb(61, 22, 220) ;
+            border-right-color:rgb(188, 1, 245) ;
+            text-align: center;
+            border-bottom-color:rgb(234, 148, 19) ;
+            animation:spin2 3s ease-in  infinite alternate ;
+        }
+        @keyframes spin2{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .out_box{
+            height: 500px;
+            width: 500px;
+            border: 5px solid;
+            border-bottom-color:grey ;
+            border-top-color:grey ;
+            border-right-color:rgb(0, 0, 0) ;
+            border-left-color:rgb(0, 0, 0) ;
+            border-radius: 50%;
+            overflow: hidden;
+            animation:spin2 3s ease-in  infinite alternate ;
+        }
+        .in_box{
+            height: 500px;
+            width: 300px;
+            border-radius: 10px 30px 100px 5px ;
+            background-color: aquamarine;
+            animation:cir0 5s ease-in  infinite alternate ;
+        }
+        @keyframes cir0 {
+            20%{
+                height: 500px;
+            width: 200px;
+            background: linear-gradient(to right, #dd3e54, #6be585);
+            }
+            40%{
+                height: 300px;
+            width: 600px;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            
+            }
+            60%{
+                height: 700px;
+            width: 200px;
+            background: linear-gradient(to right, #a8ff78, #78ffd6);
+            }
+            80%{
+                height: 1000px;
+            width: 600px;
+             background: linear-gradient(to right, #ed213a, #93291e);
+             border-radius: 60px 0px 100px 3px;
+            }
+            100%{
+                height: 500px;
+            width: 200px;
+             background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Assignment-1 </h1>
+    <div class="outer_box">
+    <div class="box1"></div>
+    </div>
+    <h1>Assignment-2 </h1>
+    <div class="box2">
+        <div class="box3"></div>
+    </div>
+    <h1>Assignment-3</h1>
+    <div class="cir1">
+        <div class="cir2">
+            <div class="cir3">
+                <div class="cir4">rotate</div>
+            </div>
+        </div>
+    </div>
+<h1>Assignment-3 </h1>
+    <div class="out_box">
+        <div class="in_box"></div>
+    </div>
+
+</body>
+</html>

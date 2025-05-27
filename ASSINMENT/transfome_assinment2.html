@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            text-align: center;
+            height: 500px;
+            width: 500px;
+          border: 2px solid;
+
+
+        }
+        div.box1{
+            height: 200px;
+            width: 200px;
+            border: 7px solid;
+            border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            background-color: red;
+            transition-duration: 2s;
+            box-shadow: 2PX;
+            
+            animation: colorchange 5s infinite  ease-in-out 5s ;
+
+
+        }
+        .box1:hover{
+         
+            border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            transform: translateY(300px);
+            margin-left: 35px;
+            
+           
+        }
+       
+            
+
+          @keyframes colorchange{
+            20%{
+             background-color: black;
+             border-radius: 150px;
+             transform: translateY(300px);
+            margin-left: 35px;
+             border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            }
+             40%{
+               background-color: rgb(207, 31, 31);
+             border-radius: 50px; 
+             transform: translateY(0px);
+            margin-left: 70px;
+             border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            }
+             45%{
+            background-color: rgb(57, 190, 24);
+             border-radius: 0px;
+             transform: translateY(300px);
+            margin-left: 105px;
+              border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            
+            }
+             55%{
+                background-color: rgb(75, 22, 197);
+             border-radius: 200px;
+             transform: translateY(0px);
+            margin-left: 140px;
+              border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            }
+             80%{
+                background-color: rgb(224, 42, 185);
+             border-radius: 0px;
+             transform: translateY(300px);
+            margin-left: 175px;
+              border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            }
+             90%{
+                background-color: rgb(48, 24, 24);
+             border-radius: 150px;
+             transform: translateY(0px);
+            margin-left: 210px;
+              border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+
+            }
+             100%{
+                background-color: rgb(112, 26, 50);
+             border-radius: 900px;
+             margin-left: 280px;
+             transform: translateY(300px);
+               border-left: pink;
+            border-right: green;
+            border-top: yellowgreen;
+            border-bottom: #0790a8;
+            border: 7px solid;
+            
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+    </div>
+    
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h1{ 
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin: 50px;
+            padding: 20px;
+        }
+        span{ 
+            
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(21, 255, 0);
+            margin: 50px;
+            padding: 20px;
+        }
+        /* pseudo classes */
+        p:first-child{
+            background-color: blue;
+        }
+        h2:last-child{
+            background-color: brown;
+        }
+        h2:last-of-type{
+            background-color: blue;
+        }
+        h2:first-of-type{
+            background-color: blanchedalmond;
+        }
+        h2:nth-child(3){
+            background-color: coral;
+        }
+        li:nth-child(2n){
+            background-color: darkcyan;
+        }
+        li:nth-child(2n+1){
+            background-color: blueviolet;
+        }
+        .box1{
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            margin: 50px;
+        }
+        .box1:hover{
+            background-color: rgb(255, 0, 0);
+            height: 200px;
+            width: 200px;
+            border: 5px solid black;
+            color: white;
+            margin-left: 100px;
+            border-radius: 50%;
+
+        }
+        p::first-line{
+            background-color: darkcyan;
+            color: chartreuse;
+        }
+        h1::first-line{
+            background-color: chartreuse;
+            color: blue;
+        }
+        h1::selection{
+             background-color: rgb(0, 255, 242);
+            color: rgb(255, 0, 0);
+        }
+        .head1::before{
+            content: "I am a";
+        }
+        .head1::after{
+            content: "from nagpur";
+        }
+        .outer-box{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+    
+        }
+        .inner-box{
+           height: 50px;
+           width: 50px;
+           background-color: darkred;
+           display: none;
+        }
+        .outer-box:hover .inner-box{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div></div>
+    </div>
+    <h1 class="head1">WEB DEVELOPER</h1>
+    <div class="box1">Lorem, ipsum dolor sit amet consectetur adipisicing </div>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti.</li>
+    </ul>
+    <div class="container">
+          <p>quas odit repellat ducimus totam veniam doloremque voluptas!</p>
+    <h1>Lorem ipsum dolor sit amet cocommodi fugiat </h1>
+    <span>necessitatibus quisquam praesentium quis,</span>/ 
+     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
+  
+
+    </div>   
+
+
+</body>
+</html>

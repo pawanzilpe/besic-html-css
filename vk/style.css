@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navirbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+.navirbar-1 h1{
+    color: red;
+    font-weight: 800;
+    font-size: 36px;
+}
+.navirbar-2 a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+.navirbar-2 a:hover{
+   color: blue;
+}
+.navirbar-3 a{
+   text-decoration: none;
+   color: white;
+   background-color: blue;
+   border-radius: 5px;
+   padding: 10px 20px;
+   font-size: 14px;
+}
+.banar-section{
+    background-image: url(../imges/images/slider-1.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.banar-overlay{
+    background-color: rgba(0, 0, 0, 0.377);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.banar-overlay h1{
+    font-size: 55px;
+    font-weight: 800;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.473);
+}
+.banar-overlay p{
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.473);
+}
+.banar-overlay a{
+    background-color: orangered;
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
+
+

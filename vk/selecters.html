@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: red;
+        }
+        /* 1) descerdent selecter directe and indirect*/
+        .contenar1 h1{
+            background-color: green;
+        }
+        /* 2) chaild selecter only direct */
+        .contenar1>h1{
+            background-color: yellow;
+        }
+        /* 3) general sibling selecter */
+        h1~h2{
+            background-color: rgb(43, 219, 219);
+        }
+        /* 4) adjacent sibling selecter  */
+        h1 + h2 {
+            background-color: rgb(212, 71, 142);
+        }
+        /* 5) attribute selecter */
+        input[type="text"]{
+            background-color: red;
+        }
+          input[type="number"]{
+            background-color: rgb(21, 255, 0);
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="text">
+    <input type="number">
+    <div class="contenar1">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt distinctio, repudiandae accusantium minima atque nisi. Blanditiis dignissimos voluptatibus dolor ipsum maxime deleniti, facilis laborum officiis doloribus fugit eos voluptatum!</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quod optio ipsam reprehenderit quae quisquam veniam, rerum ab enim, est voluptatibus cum non. Distinctio excepturi laudantium hic dolore quia nam!</h2>
+        <div class="contenar2">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, itaque nostrum illum non dicta animi sint ab culpa, iusto, perspiciatis sapiente sit soluta est expedita nihil quidem quibusdam maxime assumenda.</h1>
+        </div>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quia, officia quod nemo eveniet, magnam neque ullam earum possimus dolorem esse vel, beatae itaque sit necessitatibus tenetur voluptas quae temporibus!</p>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, molestiae! Ad odio tempora qui dicta cupiditate possimus saepe ut explicabo? Quidem accusamus fugit aliquid eum. Quidem repudiandae alias enim doloremque!</h3>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat facilis consequuntur repellendus quisquam aliquam? Dignissimos nemo aspernatur minima dolores voluptates maiores deserunt esse, deleniti molestiae dolore! Delectus fuga aperiam magnam!</h1>
+    </div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magni, molestias voluptas deserunt fugiat officiis earum autem excepturi eum consequuntur optio corporis, quae reprehenderit vel? In sint sit fugit reiciendis.</h1>
+</body>
+</html>
